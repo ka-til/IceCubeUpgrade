@@ -36,7 +36,7 @@ def csv_effective_time(generator,step, dataset):
     zeniths = []
     muon_weights = []
 
-    for filename in filelist[0:1]:
+    for filename in filelist:
         
     # open the i3 files with the dataio interface
         infile = dataio.I3File(filename)
