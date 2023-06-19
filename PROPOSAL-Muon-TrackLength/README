@@ -1,1 +1,5 @@
+Muon track length same events .ipynb: as the name suggests use the same events that NBI produced. These events are used to test muon track length in PROPOSAL. Note: I used my own proposal script here. 
+Uniform Geant4 track test.ipynb: I created my own simulation using the scripts from NBI and compared them against GEANT4 sim from NBI. 
 
+standalone_PROPOSAL.py: script to run only PROPOSAL after muon generation.
+step1_bare_lepton.py: script from Tom Stuttard with modified PROPOSAL portion.
