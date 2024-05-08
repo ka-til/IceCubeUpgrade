@@ -41,6 +41,13 @@ pde_375 = pde_375.astype(float)
 
 #removing NaN entries
 pde_375 = pde_375[~np.isnan(pde_375)]
+
+#calculate standard deviation
+std_375 = np.std(pde_375)
+
+#multiplying all vales by a constant will result in the standard deviation being multiplied by the constant.
+pde_375 = pde_375*1/np.mean(pde_375) #want standard deviation that is 4.2% of the mean. 
+
 mean_375 = np.mean(pde_375)
 
 sample = pde_375+(1.0 - mean_375) #shifting the mean to 1.0
